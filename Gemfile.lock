@@ -8,6 +8,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     dotenv (2.1.0)
     eventmachine (1.2.0.1)
@@ -30,6 +32,7 @@ GEM
       faraday_middleware-parse_oj (~> 0.3)
       launchy (~> 2.4)
     gli (2.13.4)
+    hashdiff (0.2.3)
     hashie (3.4.3)
     i18n (0.7.0)
     json (1.8.3)
@@ -58,6 +61,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
+    safe_yaml (1.0.4)
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -81,6 +85,11 @@ GEM
     tilt (2.0.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    vcr (2.9.3)
+    webmock (1.22.3)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
     websocket-driver (0.6.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -97,6 +106,8 @@ DEPENDENCIES
   rspec
   sinatra
   slack-ruby-bot
+  vcr
+  webmock
 
 BUNDLED WITH
    1.10.6
